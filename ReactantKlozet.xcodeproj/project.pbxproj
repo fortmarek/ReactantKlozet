@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F860AD362002806C00EEC753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD352002806C00EEC753 /* AppDelegate.swift */; };
+		F860AD3E2002806C00EEC753 /* ReactantKlozet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F860AD3C2002806C00EEC753 /* ReactantKlozet.xcdatamodeld */; };
+		F860AD402002806C00EEC753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F860AD3F2002806C00EEC753 /* Assets.xcassets */; };
+		F860AD432002806C00EEC753 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F860AD412002806C00EEC753 /* LaunchScreen.storyboard */; };
+		F860AD4E2002806C00EEC753 /* ReactantKlozetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD4D2002806C00EEC753 /* ReactantKlozetTests.swift */; };
+		F860AD592002806D00EEC753 /* ReactantKlozetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD582002806D00EEC753 /* ReactantKlozetUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F860AD4A2002806C00EEC753 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F860AD2A2002806C00EEC753 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F860AD312002806C00EEC753;
+			remoteInfo = ReactantKlozet;
+		};
+		F860AD552002806D00EEC753 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F860AD2A2002806C00EEC753 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F860AD312002806C00EEC753;
+			remoteInfo = ReactantKlozet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F860AD322002806C00EEC753 /* ReactantKlozet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactantKlozet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F860AD352002806C00EEC753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F860AD3D2002806C00EEC753 /* ReactantKlozet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReactantKlozet.xcdatamodel; sourceTree = "<group>"; };
+		F860AD3F2002806C00EEC753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F860AD422002806C00EEC753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F860AD442002806C00EEC753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F860AD492002806C00EEC753 /* ReactantKlozetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactantKlozetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F860AD4D2002806C00EEC753 /* ReactantKlozetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactantKlozetTests.swift; sourceTree = "<group>"; };
+		F860AD4F2002806C00EEC753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F860AD542002806D00EEC753 /* ReactantKlozetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactantKlozetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F860AD582002806D00EEC753 /* ReactantKlozetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactantKlozetUITests.swift; sourceTree = "<group>"; };
+		F860AD5A2002806D00EEC753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F860AD2F2002806C00EEC753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860AD462002806C00EEC753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860AD512002806D00EEC753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F860AD292002806C00EEC753 = {
+			isa = PBXGroup;
+			children = (
+				F860AD342002806C00EEC753 /* ReactantKlozet */,
+				F860AD4C2002806C00EEC753 /* ReactantKlozetTests */,
+				F860AD572002806D00EEC753 /* ReactantKlozetUITests */,
+				F860AD332002806C00EEC753 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F860AD332002806C00EEC753 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F860AD322002806C00EEC753 /* ReactantKlozet.app */,
+				F860AD492002806C00EEC753 /* ReactantKlozetTests.xctest */,
+				F860AD542002806D00EEC753 /* ReactantKlozetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F860AD342002806C00EEC753 /* ReactantKlozet */ = {
+			isa = PBXGroup;
+			children = (
+				F860AD732002819B00EEC753 /* Source */,
+				F860AD722002819200EEC753 /* Model */,
+				F860AD712002818500EEC753 /* Service */,
+				F860AD702002817C00EEC753 /* Util */,
+				F860AD6F2002817300EEC753 /* Wireframe */,
+				F860AD6E2002816A00EEC753 /* Resource */,
+				F860AD6C2002814300EEC753 /* Generated */,
+				F860AD352002806C00EEC753 /* AppDelegate.swift */,
+				F860AD412002806C00EEC753 /* LaunchScreen.storyboard */,
+				F860AD3C2002806C00EEC753 /* ReactantKlozet.xcdatamodeld */,
+			);
+			path = ReactantKlozet;
+			sourceTree = "<group>";
+		};
+		F860AD4C2002806C00EEC753 /* ReactantKlozetTests */ = {
+			isa = PBXGroup;
+			children = (
+				F860AD4D2002806C00EEC753 /* ReactantKlozetTests.swift */,
+				F860AD4F2002806C00EEC753 /* Info.plist */,
+			);
+			path = ReactantKlozetTests;
+			sourceTree = "<group>";
+		};
+		F860AD572002806D00EEC753 /* ReactantKlozetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F860AD582002806D00EEC753 /* ReactantKlozetUITests.swift */,
+				F860AD5A2002806D00EEC753 /* Info.plist */,
+			);
+			path = ReactantKlozetUITests;
+			sourceTree = "<group>";
+		};
+		F860AD6C2002814300EEC753 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Generated;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		F860AD6E2002816A00EEC753 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F860AD3F2002806C00EEC753 /* Assets.xcassets */,
+				F860AD442002806C00EEC753 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F860AD6F2002817300EEC753 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		F860AD702002817C00EEC753 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F860AD712002818500EEC753 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F860AD722002819200EEC753 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F860AD732002819B00EEC753 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F860AD74200281A400EEC753 /* Component */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F860AD74200281A400EEC753 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F860AD75200281AA00EEC753 /* Main */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		F860AD75200281AA00EEC753 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F860AD312002806C00EEC753 /* ReactantKlozet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F860AD5D2002806D00EEC753 /* Build configuration list for PBXNativeTarget "ReactantKlozet" */;
+			buildPhases = (
+				F860AD2E2002806C00EEC753 /* Sources */,
+				F860AD2F2002806C00EEC753 /* Frameworks */,
+				F860AD302002806C00EEC753 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactantKlozet;
+			productName = ReactantKlozet;
+			productReference = F860AD322002806C00EEC753 /* ReactantKlozet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F860AD482002806C00EEC753 /* ReactantKlozetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F860AD602002806D00EEC753 /* Build configuration list for PBXNativeTarget "ReactantKlozetTests" */;
+			buildPhases = (
+				F860AD452002806C00EEC753 /* Sources */,
+				F860AD462002806C00EEC753 /* Frameworks */,
+				F860AD472002806C00EEC753 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F860AD4B2002806C00EEC753 /* PBXTargetDependency */,
+			);
+			name = ReactantKlozetTests;
+			productName = ReactantKlozetTests;
+			productReference = F860AD492002806C00EEC753 /* ReactantKlozetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F860AD532002806D00EEC753 /* ReactantKlozetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F860AD632002806D00EEC753 /* Build configuration list for PBXNativeTarget "ReactantKlozetUITests" */;
+			buildPhases = (
+				F860AD502002806D00EEC753 /* Sources */,
+				F860AD512002806D00EEC753 /* Frameworks */,
+				F860AD522002806D00EEC753 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F860AD562002806D00EEC753 /* PBXTargetDependency */,
+			);
+			name = ReactantKlozetUITests;
+			productName = ReactantKlozetUITests;
+			productReference = F860AD542002806D00EEC753 /* ReactantKlozetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F860AD2A2002806C00EEC753 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Marek Fořt";
+				TargetAttributes = {
+					F860AD312002806C00EEC753 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F860AD482002806C00EEC753 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F860AD312002806C00EEC753;
+					};
+					F860AD532002806D00EEC753 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F860AD312002806C00EEC753;
+					};
+				};
+			};
+			buildConfigurationList = F860AD2D2002806C00EEC753 /* Build configuration list for PBXProject "ReactantKlozet" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F860AD292002806C00EEC753;
+			productRefGroup = F860AD332002806C00EEC753 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F860AD312002806C00EEC753 /* ReactantKlozet */,
+				F860AD482002806C00EEC753 /* ReactantKlozetTests */,
+				F860AD532002806D00EEC753 /* ReactantKlozetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F860AD302002806C00EEC753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F860AD432002806C00EEC753 /* LaunchScreen.storyboard in Resources */,
+				F860AD402002806C00EEC753 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860AD472002806C00EEC753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860AD522002806D00EEC753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F860AD2E2002806C00EEC753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F860AD3E2002806C00EEC753 /* ReactantKlozet.xcdatamodeld in Sources */,
+				F860AD362002806C00EEC753 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860AD452002806C00EEC753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F860AD4E2002806C00EEC753 /* ReactantKlozetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F860AD502002806D00EEC753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F860AD592002806D00EEC753 /* ReactantKlozetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F860AD4B2002806C00EEC753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F860AD312002806C00EEC753 /* ReactantKlozet */;
+			targetProxy = F860AD4A2002806C00EEC753 /* PBXContainerItemProxy */;
+		};
+		F860AD562002806D00EEC753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F860AD312002806C00EEC753 /* ReactantKlozet */;
+			targetProxy = F860AD552002806D00EEC753 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F860AD412002806C00EEC753 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F860AD422002806C00EEC753 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F860AD5B2002806D00EEC753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F860AD5C2002806D00EEC753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F860AD5E2002806D00EEC753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95ER52SG;
+				INFOPLIST_FILE = "$(SRCROOT)/ReactantKlozet/Resource/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = marekfort.ReactantKlozet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F860AD5F2002806D00EEC753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95ER52SG;
+				INFOPLIST_FILE = "$(SRCROOT)/ReactantKlozet/Resource/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = marekfort.ReactantKlozet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F860AD612002806D00EEC753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95ER52SG;
+				INFOPLIST_FILE = ReactantKlozetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = marekfort.ReactantKlozetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactantKlozet.app/ReactantKlozet";
+			};
+			name = Debug;
+		};
+		F860AD622002806D00EEC753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95ER52SG;
+				INFOPLIST_FILE = ReactantKlozetTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = marekfort.ReactantKlozetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactantKlozet.app/ReactantKlozet";
+			};
+			name = Release;
+		};
+		F860AD642002806D00EEC753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95ER52SG;
+				INFOPLIST_FILE = ReactantKlozetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = marekfort.ReactantKlozetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReactantKlozet;
+			};
+			name = Debug;
+		};
+		F860AD652002806D00EEC753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QH95ER52SG;
+				INFOPLIST_FILE = ReactantKlozetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = marekfort.ReactantKlozetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReactantKlozet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F860AD2D2002806C00EEC753 /* Build configuration list for PBXProject "ReactantKlozet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F860AD5B2002806D00EEC753 /* Debug */,
+				F860AD5C2002806D00EEC753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F860AD5D2002806D00EEC753 /* Build configuration list for PBXNativeTarget "ReactantKlozet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F860AD5E2002806D00EEC753 /* Debug */,
+				F860AD5F2002806D00EEC753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F860AD602002806D00EEC753 /* Build configuration list for PBXNativeTarget "ReactantKlozetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F860AD612002806D00EEC753 /* Debug */,
+				F860AD622002806D00EEC753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F860AD632002806D00EEC753 /* Build configuration list for PBXNativeTarget "ReactantKlozetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F860AD642002806D00EEC753 /* Debug */,
+				F860AD652002806D00EEC753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F860AD3C2002806C00EEC753 /* ReactantKlozet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F860AD3D2002806C00EEC753 /* ReactantKlozet.xcdatamodel */,
+			);
+			currentVersion = F860AD3D2002806C00EEC753 /* ReactantKlozet.xcdatamodel */;
+			path = ReactantKlozet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F860AD2A2002806C00EEC753 /* Project object */;
+}
