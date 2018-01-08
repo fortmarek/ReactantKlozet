@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14E22145F2A88A37D549C160 /* Pods_ReactantKlozetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E0A050ED763D2EE3FCEF93 /* Pods_ReactantKlozetTests.framework */; };
+		563E3628E1DA6228BF7A56FF /* Pods_ReactantKlozetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D621EDA09C5838702A894 /* Pods_ReactantKlozetUITests.framework */; };
+		9F42B10E7DEAF0D074FEDAD0 /* Pods_ReactantKlozet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B90086362443AF4DF543A9 /* Pods_ReactantKlozet.framework */; };
 		F860AD362002806C00EEC753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD352002806C00EEC753 /* AppDelegate.swift */; };
 		F860AD3E2002806C00EEC753 /* ReactantKlozet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F860AD3C2002806C00EEC753 /* ReactantKlozet.xcdatamodeld */; };
 		F860AD402002806C00EEC753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F860AD3F2002806C00EEC753 /* Assets.xcassets */; };
 		F860AD432002806C00EEC753 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F860AD412002806C00EEC753 /* LaunchScreen.storyboard */; };
 		F860AD4E2002806C00EEC753 /* ReactantKlozetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD4D2002806C00EEC753 /* ReactantKlozetTests.swift */; };
 		F860AD592002806D00EEC753 /* ReactantKlozetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD582002806D00EEC753 /* ReactantKlozetUITests.swift */; };
+		F860AD8D2002C50E00EEC753 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD8C2002C50E00EEC753 /* DetailController.swift */; };
+		F860AD8F2002C57700EEC753 /* DetailRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD8E2002C57700EEC753 /* DetailRootView.swift */; };
+		F860AD912002C5CD00EEC753 /* DetailRootView.ui.xml in Resources */ = {isa = PBXBuildFile; fileRef = F860AD902002C5CD00EEC753 /* DetailRootView.ui.xml */; };
+		F860AD992002C93500EEC753 /* GeneratedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD982002C93500EEC753 /* GeneratedUI.swift */; };
+		F860AD9F2003758100EEC753 /* UIColor+UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD9E2003758100EEC753 /* UIColor+UIFontExtension.swift */; };
+		F860ADA1200377F200EEC753 /* General.styles.xml in Resources */ = {isa = PBXBuildFile; fileRef = F860ADA0200377F200EEC753 /* General.styles.xml */; };
+		F860ADA32003832500EEC753 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADA22003832500EEC753 /* APIService.swift */; };
+		F860ADA52003941300EEC753 /* Toilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADA42003941300EEC753 /* Toilet.swift */; };
+		F860ADA7200395FB00EEC753 /* OpenTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADA6200395FB00EEC753 /* OpenTimes.swift */; };
+		F860ADA92003969C00EEC753 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADA82003969C00EEC753 /* Address.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20C0E51EF5B9458EC888BBFC /* Pods-ReactantKlozetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactantKlozetUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactantKlozetUITests/Pods-ReactantKlozetUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5557679694DBF6E69DB7CC6A /* Pods-ReactantKlozet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactantKlozet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactantKlozet/Pods-ReactantKlozet.debug.xcconfig"; sourceTree = "<group>"; };
+		56B2878054A9328B61E298DD /* Pods-ReactantKlozetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactantKlozetUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactantKlozetUITests/Pods-ReactantKlozetUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		609D621EDA09C5838702A894 /* Pods_ReactantKlozetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactantKlozetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71DF755F96F44BB9F9DC07FC /* Pods-ReactantKlozetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactantKlozetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactantKlozetTests/Pods-ReactantKlozetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		89F3C021F108E51C73626DCA /* Pods-ReactantKlozetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactantKlozetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactantKlozetTests/Pods-ReactantKlozetTests.release.xcconfig"; sourceTree = "<group>"; };
+		A9B90086362443AF4DF543A9 /* Pods_ReactantKlozet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactantKlozet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E0A050ED763D2EE3FCEF93 /* Pods_ReactantKlozetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactantKlozetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E50017BB947638455F665742 /* Pods-ReactantKlozet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactantKlozet.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactantKlozet/Pods-ReactantKlozet.release.xcconfig"; sourceTree = "<group>"; };
 		F860AD322002806C00EEC753 /* ReactantKlozet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactantKlozet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F860AD352002806C00EEC753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F860AD3D2002806C00EEC753 /* ReactantKlozet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReactantKlozet.xcdatamodel; sourceTree = "<group>"; };
@@ -45,6 +67,16 @@
 		F860AD542002806D00EEC753 /* ReactantKlozetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactantKlozetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F860AD582002806D00EEC753 /* ReactantKlozetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactantKlozetUITests.swift; sourceTree = "<group>"; };
 		F860AD5A2002806D00EEC753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F860AD8C2002C50E00EEC753 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		F860AD8E2002C57700EEC753 /* DetailRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRootView.swift; sourceTree = "<group>"; };
+		F860AD902002C5CD00EEC753 /* DetailRootView.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DetailRootView.ui.xml; sourceTree = "<group>"; };
+		F860AD982002C93500EEC753 /* GeneratedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedUI.swift; sourceTree = "<group>"; };
+		F860AD9E2003758100EEC753 /* UIColor+UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+UIFontExtension.swift"; sourceTree = "<group>"; };
+		F860ADA0200377F200EEC753 /* General.styles.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = General.styles.xml; sourceTree = "<group>"; };
+		F860ADA22003832500EEC753 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F860ADA42003941300EEC753 /* Toilet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toilet.swift; sourceTree = "<group>"; };
+		F860ADA6200395FB00EEC753 /* OpenTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTimes.swift; sourceTree = "<group>"; };
+		F860ADA82003969C00EEC753 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F42B10E7DEAF0D074FEDAD0 /* Pods_ReactantKlozet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E22145F2A88A37D549C160 /* Pods_ReactantKlozetTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,19 +100,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				563E3628E1DA6228BF7A56FF /* Pods_ReactantKlozetUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82A9CE1BBB96BB2756CF8799 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5557679694DBF6E69DB7CC6A /* Pods-ReactantKlozet.debug.xcconfig */,
+				E50017BB947638455F665742 /* Pods-ReactantKlozet.release.xcconfig */,
+				71DF755F96F44BB9F9DC07FC /* Pods-ReactantKlozetTests.debug.xcconfig */,
+				89F3C021F108E51C73626DCA /* Pods-ReactantKlozetTests.release.xcconfig */,
+				56B2878054A9328B61E298DD /* Pods-ReactantKlozetUITests.debug.xcconfig */,
+				20C0E51EF5B9458EC888BBFC /* Pods-ReactantKlozetUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D9F2594412BD83F478C41EB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9B90086362443AF4DF543A9 /* Pods_ReactantKlozet.framework */,
+				B6E0A050ED763D2EE3FCEF93 /* Pods_ReactantKlozetTests.framework */,
+				609D621EDA09C5838702A894 /* Pods_ReactantKlozetUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F860AD292002806C00EEC753 = {
 			isa = PBXGroup;
 			children = (
-				F860AD342002806C00EEC753 /* ReactantKlozet */,
+				F860AD342002806C00EEC753 /* Application */,
 				F860AD4C2002806C00EEC753 /* ReactantKlozetTests */,
 				F860AD572002806D00EEC753 /* ReactantKlozetUITests */,
 				F860AD332002806C00EEC753 /* Products */,
+				82A9CE1BBB96BB2756CF8799 /* Pods */,
+				D9F2594412BD83F478C41EB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,21 +152,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F860AD342002806C00EEC753 /* ReactantKlozet */ = {
+		F860AD342002806C00EEC753 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				F860AD972002C92800EEC753 /* Generated */,
 				F860AD732002819B00EEC753 /* Source */,
-				F860AD722002819200EEC753 /* Model */,
-				F860AD712002818500EEC753 /* Service */,
-				F860AD702002817C00EEC753 /* Util */,
-				F860AD6F2002817300EEC753 /* Wireframe */,
 				F860AD6E2002816A00EEC753 /* Resource */,
-				F860AD6C2002814300EEC753 /* Generated */,
 				F860AD352002806C00EEC753 /* AppDelegate.swift */,
 				F860AD412002806C00EEC753 /* LaunchScreen.storyboard */,
 				F860AD3C2002806C00EEC753 /* ReactantKlozet.xcdatamodeld */,
 			);
-			path = ReactantKlozet;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		F860AD4C2002806C00EEC753 /* ReactantKlozetTests */ = {
@@ -125,14 +181,6 @@
 				F860AD5A2002806D00EEC753 /* Info.plist */,
 			);
 			path = ReactantKlozetUITests;
-			sourceTree = "<group>";
-		};
-		F860AD6C2002814300EEC753 /* Generated */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Generated;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		F860AD6E2002816A00EEC753 /* Resource */ = {
@@ -161,6 +209,7 @@
 		F860AD712002818500EEC753 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				F860ADA22003832500EEC753 /* APIService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -168,6 +217,9 @@
 		F860AD722002819200EEC753 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F860ADA42003941300EEC753 /* Toilet.swift */,
+				F860ADA6200395FB00EEC753 /* OpenTimes.swift */,
+				F860ADA82003969C00EEC753 /* Address.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,7 +227,12 @@
 		F860AD732002819B00EEC753 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				F860AD9D2003757000EEC753 /* Styles */,
 				F860AD74200281A400EEC753 /* Component */,
+				F860AD722002819200EEC753 /* Model */,
+				F860AD712002818500EEC753 /* Service */,
+				F860AD702002817C00EEC753 /* Util */,
+				F860AD6F2002817300EEC753 /* Wireframe */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -191,8 +248,28 @@
 		F860AD75200281AA00EEC753 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F860AD8C2002C50E00EEC753 /* DetailController.swift */,
+				F860AD8E2002C57700EEC753 /* DetailRootView.swift */,
+				F860AD902002C5CD00EEC753 /* DetailRootView.ui.xml */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		F860AD972002C92800EEC753 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				F860AD982002C93500EEC753 /* GeneratedUI.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		F860AD9D2003757000EEC753 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				F860AD9E2003758100EEC753 /* UIColor+UIFontExtension.swift */,
+				F860ADA0200377F200EEC753 /* General.styles.xml */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,9 +279,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F860AD5D2002806D00EEC753 /* Build configuration list for PBXNativeTarget "ReactantKlozet" */;
 			buildPhases = (
+				F1083A05EA35FE0D3C450663 /* [CP] Check Pods Manifest.lock */,
+				F860AD922002C5E000EEC753 /* ReactantUI */,
 				F860AD2E2002806C00EEC753 /* Sources */,
 				F860AD2F2002806C00EEC753 /* Frameworks */,
 				F860AD302002806C00EEC753 /* Resources */,
+				22B40C49C76E82DC9D464406 /* [CP] Embed Pods Frameworks */,
+				DA0C972A8E5ED67F51423720 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,9 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F860AD602002806D00EEC753 /* Build configuration list for PBXNativeTarget "ReactantKlozetTests" */;
 			buildPhases = (
+				8BAB203A18D77BD89CCA9169 /* [CP] Check Pods Manifest.lock */,
 				F860AD452002806C00EEC753 /* Sources */,
 				F860AD462002806C00EEC753 /* Frameworks */,
 				F860AD472002806C00EEC753 /* Resources */,
+				6406FC19FBFF48AB49BB4242 /* [CP] Embed Pods Frameworks */,
+				23C79EA6843E363FE2779C99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F860AD632002806D00EEC753 /* Build configuration list for PBXNativeTarget "ReactantKlozetUITests" */;
 			buildPhases = (
+				EC04719627F339FDF8A2A670 /* [CP] Check Pods Manifest.lock */,
 				F860AD502002806D00EEC753 /* Sources */,
 				F860AD512002806D00EEC753 /* Frameworks */,
 				F860AD522002806D00EEC753 /* Resources */,
+				45EEA0BFB5B8E249F2ADEF1C /* [CP] Embed Pods Frameworks */,
+				092DF65D61190668DA4EA1A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,6 +389,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F860AD912002C5CD00EEC753 /* DetailRootView.ui.xml in Resources */,
+				F860ADA1200377F200EEC753 /* General.styles.xml in Resources */,
 				F860AD432002806C00EEC753 /* LaunchScreen.storyboard in Resources */,
 				F860AD402002806C00EEC753 /* Assets.xcassets in Resources */,
 			);
@@ -323,12 +412,172 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		092DF65D61190668DA4EA1A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactantKlozetUITests/Pods-ReactantKlozetUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22B40C49C76E82DC9D464406 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactantKlozet/Pods-ReactantKlozet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23C79EA6843E363FE2779C99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactantKlozetTests/Pods-ReactantKlozetTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45EEA0BFB5B8E249F2ADEF1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactantKlozetUITests/Pods-ReactantKlozetUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6406FC19FBFF48AB49BB4242 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactantKlozetTests/Pods-ReactantKlozetTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BAB203A18D77BD89CCA9169 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA0C972A8E5ED67F51423720 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactantKlozet/Pods-ReactantKlozet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC04719627F339FDF8A2A670 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F1083A05EA35FE0D3C450663 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F860AD922002C5E000EEC753 /* ReactantUI */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = ReactantUI;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pushd \"$PODS_ROOT/ReactantUI\"\nenv -i HOME=\"$HOME\" PATH=\"$PATH\" swift build\npopd\n# Go into directory where you'll have `.ui.xml` files.\ncd \"$SRCROOT/Application/Source\"\n# Run reactant-ui generator and save the output to a single `.swift` file\n\"$PODS_ROOT/ReactantUI/.build/debug/reactant-ui\" --enable-live > \"$SRCROOT/Application/Generated/GeneratedUI.swift\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F860AD2E2002806C00EEC753 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F860ADA52003941300EEC753 /* Toilet.swift in Sources */,
 				F860AD3E2002806C00EEC753 /* ReactantKlozet.xcdatamodeld in Sources */,
+				F860ADA32003832500EEC753 /* APIService.swift in Sources */,
+				F860AD992002C93500EEC753 /* GeneratedUI.swift in Sources */,
+				F860ADA92003969C00EEC753 /* Address.swift in Sources */,
+				F860AD8F2002C57700EEC753 /* DetailRootView.swift in Sources */,
+				F860ADA7200395FB00EEC753 /* OpenTimes.swift in Sources */,
+				F860AD8D2002C50E00EEC753 /* DetailController.swift in Sources */,
+				F860AD9F2003758100EEC753 /* UIColor+UIFontExtension.swift in Sources */,
 				F860AD362002806C00EEC753 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,11 +734,12 @@
 		};
 		F860AD5E2002806D00EEC753 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5557679694DBF6E69DB7CC6A /* Pods-ReactantKlozet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QH95ER52SG;
-				INFOPLIST_FILE = "$(SRCROOT)/ReactantKlozet/Resource/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Application/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = marekfort.ReactantKlozet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,11 +750,12 @@
 		};
 		F860AD5F2002806D00EEC753 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E50017BB947638455F665742 /* Pods-ReactantKlozet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QH95ER52SG;
-				INFOPLIST_FILE = "$(SRCROOT)/ReactantKlozet/Resource/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Application/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = marekfort.ReactantKlozet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -515,6 +766,7 @@
 		};
 		F860AD612002806D00EEC753 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71DF755F96F44BB9F9DC07FC /* Pods-ReactantKlozetTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +784,7 @@
 		};
 		F860AD622002806D00EEC753 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F3C021F108E51C73626DCA /* Pods-ReactantKlozetTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -549,6 +802,7 @@
 		};
 		F860AD642002806D00EEC753 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56B2878054A9328B61E298DD /* Pods-ReactantKlozetUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -565,6 +819,7 @@
 		};
 		F860AD652002806D00EEC753 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20C0E51EF5B9458EC888BBFC /* Pods-ReactantKlozetUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

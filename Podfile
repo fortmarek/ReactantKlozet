@@ -6,6 +6,12 @@ target 'ReactantKlozet' do
   use_frameworks!
 
   # Pods for ReactantKlozet
+  pod 'Reactant'
+  pod 'ReactantUI', :git => 'https://github.com/Brightify/ReactantUI', :branch => 'warnings-fix'
+  pod 'ReactantLiveUI', :configuration => 'Debug'
+  pod 'Fetcher'
+  pod "Fetcher/RxFetcher"
+  pod 'DataMapper'
 
   target 'ReactantKlozetTests' do
     inherit! :search_paths
