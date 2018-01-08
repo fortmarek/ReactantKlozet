@@ -8,7 +8,7 @@
 
 import Reactant
 
-final class DetailRootView: ViewBase<Void, Void> {
+final class DetailRootView: ViewBase<Toilet, Void> {
     
     
     let noView = UIView()
@@ -17,7 +17,7 @@ final class DetailRootView: ViewBase<Void, Void> {
     let openTimesLabel = UILabel()
     
     override func update() {
-        
+        openTimesLabel.text = componentState.price
     }
     
     override func loadView() {

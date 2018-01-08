@@ -29,7 +29,7 @@ final class MainWireframe: Wireframe {
     
     func createDetailController() -> DetailController {
         return create { provider in
-            let dependencies = DetailController.Dependencies(detailToiletService: module.detailToiletService)
+            let dependencies = DetailController.Dependencies(toiletService: module.toiletService)
             
             return DetailController(dependencies: dependencies)
         }

@@ -8,5 +8,5 @@
 
 
 protocol DependencyModule {
-    var detailToiletService: DetailToiletService {get}
+    var toiletService: ToiletService {get}
 }

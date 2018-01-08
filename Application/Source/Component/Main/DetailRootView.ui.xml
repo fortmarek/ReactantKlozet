@@ -38,5 +38,12 @@
         layout:right="super inset(12)"
         layout:centerY="openingTimesLabel"/>
 
+        <Container
+          backgroundColor="black"
+          layout:height="2"
+          layout:width="super"
+          layout:top="openTimesLabel.bottom offset(24)" >
+        </Container>
+
 
 </Component>

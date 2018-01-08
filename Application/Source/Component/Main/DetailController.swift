@@ -11,7 +11,7 @@ import Reactant
 final class DetailController: ControllerBase<Void, DetailRootView> {
     
     struct Dependencies {
-        let detailToiletService: DetailToiletService
+        let toiletService: ToiletService
     }
     
     private let dependencies: Dependencies
@@ -20,20 +20,13 @@ final class DetailController: ControllerBase<Void, DetailRootView> {
         self.dependencies = dependencies
         super.init()
     }
-    
-//    override init() {
-//        super.init(title: "Greeter")
-//
-//
-//        // An initial state for our rootView
-//        rootView.componentState = (greeting: "" , name: "")
-//    }
-    
-    // Act on actions produced from RootView
-//    override func act(on action: GreeterAction) {
-//        switch action {
-//        case .greetingChanged(let greeting):
-//            rootView.componentState = (greeting: "Hello \(greeting)!", name: greeting)
-//        }
-//    }
+
+    override func afterInit() {
+        dependencies.toiletService.getToilets().subscribe(onNext: { [weak self] result in
+            //TODO: Handle errors
+            guard let toilets = result.value, toilets.isEmpty == false else {return}
+            self?.rootView.componentState = toilets[10]
+        }).disposed(by: lifetimeDisposeBag)
+    }
 }
+

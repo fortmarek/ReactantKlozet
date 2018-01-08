@@ -29,6 +29,7 @@
 		F860ADAD2003DB9900EEC753 /* DependencyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADAC2003DB9900EEC753 /* DependencyModule.swift */; };
 		F860ADAF2003DBE000EEC753 /* KlozetModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADAE2003DBE000EEC753 /* KlozetModule.swift */; };
 		F860ADB12003DCB500EEC753 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADB02003DCB500EEC753 /* MainWireframe.swift */; };
+		F860ADB32003E4FB00EEC753 /* ToiletsBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADB22003E4FB00EEC753 /* ToiletsBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		F860ADAC2003DB9900EEC753 /* DependencyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyModule.swift; sourceTree = "<group>"; };
 		F860ADAE2003DBE000EEC753 /* KlozetModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlozetModule.swift; sourceTree = "<group>"; };
 		F860ADB02003DCB500EEC753 /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
+		F860ADB22003E4FB00EEC753 /* ToiletsBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				F860ADA42003941300EEC753 /* Toilet.swift */,
+				F860ADB22003E4FB00EEC753 /* ToiletsBox.swift */,
 				F860ADA6200395FB00EEC753 /* OpenTimes.swift */,
 				F860ADA82003969C00EEC753 /* Address.swift */,
 			);
@@ -578,6 +581,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F860ADB32003E4FB00EEC753 /* ToiletsBox.swift in Sources */,
 				F860ADAF2003DBE000EEC753 /* KlozetModule.swift in Sources */,
 				F860ADB12003DCB500EEC753 /* MainWireframe.swift in Sources */,
 				F860ADA52003941300EEC753 /* Toilet.swift in Sources */,

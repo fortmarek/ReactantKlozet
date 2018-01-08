@@ -8,9 +8,9 @@
 
 final class KlozetModule: DependencyModule {
     
-    let detailToiletService: DetailToiletService
+    let toiletService: ToiletService
     
     init() {
-        detailToiletService = DetailToiletService()
+        toiletService = ToiletService()
     }
 }

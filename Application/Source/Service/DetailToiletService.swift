@@ -12,12 +12,12 @@ import Reactant
 import Result
 
 private struct Endpoints: EndpointProvider {
-    static func getToilet(_ toiletId: Int) -> GET<Void, Toilet> {
-        return create("http://139.59.144.155/klozet/toilet/\(toiletId)")
+    static func getToilets() -> GET<Void, ToiletsBox> {
+        return create("http://139.59.144.155/klozet/en")
     }
 }
 
-final class DetailToiletService {
+final class ToiletService {
     
     private let fetcher = Fetcher(requestPerformer: AlamofireRequestPerformer())
     
@@ -25,8 +25,9 @@ final class DetailToiletService {
         fetcher.register(requestEnhancers: RequestLogger(defaultOptions: RequestLogging.all))
     }
     
-    func getToilet(id: Int) -> Observable<Result<Toilet, FetcherError>> {
-        return fetcher.rx.request(Endpoints.getToilet(id))
+    func getToilets() -> Observable<Result<[Toilet], FetcherError>> {
+        return fetcher.rx.request(Endpoints.getToilets())
             .asResult()
+            .mapValue {$0.toilets}
     }
 }
