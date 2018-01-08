@@ -11,7 +11,6 @@
 
     <Container
         field="noView"
-        backgroundColor="gray"
         layout:height="169"
         layout:left="super"
         layout:right="super"
@@ -25,25 +24,48 @@
     <Label
       style=":general:defaultLabel"
       font=":heavy@17"
-      field="openingTimesLabel"
-      text="Opening Times"
+      field="priceTitleLabel"
+      text="Price"
       layout:left="super offset(12)"
       layout:top="noView.bottom offset(32)"/>
 
       <Label
-        field="openTimesLabel"
+        field="priceLabel"
         font=":heavy@17"
         textColor="red"
-        text="Mon-Fri: 11:00 - 23:30"
         layout:right="super inset(12)"
-        layout:centerY="openingTimesLabel"/>
+        layout:centerY="priceTitleLabel"/>
 
         <Container
+          field="separator"
           backgroundColor="black"
           layout:height="2"
           layout:width="super"
-          layout:top="openTimesLabel.bottom offset(24)" >
+          layout:top="priceLabel.bottom offset(24)" >
         </Container>
+
+        <Label
+          style=":general:defaultLabel"
+          font=":bold@18"
+          field="addressLabel"
+          layout:centerX="super"
+          layout:top="separator.bottom offset(30)" />
+
+        <Label
+          style=":general:defaultLabel"
+          font=":medium@14"
+          field="subaddressLabel"
+          layout:centerX="super"
+          layout:top="addressLabel.bottom offset(2)" />
+
+          <Button
+            field="nextToiletButton"
+            layout:centerX="super"
+            layout:top="addressLabel.bottom offset(30)"
+            title="Next Toilet!"
+            titleColor="red" />
+
+
 
 
 </Component>

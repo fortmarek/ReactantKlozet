@@ -66,27 +66,36 @@ extension DetailRootView: ReactantUI, RootView {
                 return false
             }
             #else
-            target.noView.backgroundColor = UIColor.gray
             target.addSubview(target.noView)
             
             target.photoImageView.image = UIImage(named: "NoCamera")
             target.noView.addSubview(target.photoImageView)
             
-            target.openingTimesLabel.apply(style: GeneralStyles.defaultLabel)
-            target.openingTimesLabel.font = UIFont.systemFont(ofSize: 17.0, weight: UIFontWeightHeavy)
-            target.openingTimesLabel.text = "Opening Times"
-            target.addSubview(target.openingTimesLabel)
+            target.priceTitleLabel.apply(style: GeneralStyles.defaultLabel)
+            target.priceTitleLabel.font = UIFont.systemFont(ofSize: 17.0, weight: UIFontWeightHeavy)
+            target.priceTitleLabel.text = "Price"
+            target.addSubview(target.priceTitleLabel)
             
-            target.openTimesLabel.textColor = UIColor.red
-            target.openTimesLabel.text = "Mon-FFri: 11.0:0.0 -  23.0:30.0"
-            target.openTimesLabel.font = UIFont.systemFont(ofSize: 17.0, weight: UIFontWeightHeavy)
-            target.addSubview(target.openTimesLabel)
+            target.priceLabel.textColor = UIColor.red
+            target.priceLabel.font = UIFont.systemFont(ofSize: 17.0, weight: UIFontWeightHeavy)
+            target.addSubview(target.priceLabel)
+            
+            target.separator.backgroundColor = UIColor.black
+            target.addSubview(target.separator)
+            
+            target.addressLabel.apply(style: GeneralStyles.defaultLabel)
+            target.addressLabel.font = UIFont.systemFont(ofSize: 18.0, weight: UIFontWeightBold)
+            target.addSubview(target.addressLabel)
+            
+            target.subaddressLabel.apply(style: GeneralStyles.defaultLabel)
+            target.subaddressLabel.font = UIFont.systemFont(ofSize: 14.0, weight: UIFontWeightMedium)
+            target.addSubview(target.subaddressLabel)
             
             target.noView.snp.makeConstraints {
                 make in
                 make.height.equalTo(169.0)
-                make.right.equalTo(target)
                 make.top.equalTo(target)
+                make.right.equalTo(target)
                 make.left.equalTo(target)
             }
             target.photoImageView.snp.makeConstraints {
@@ -94,15 +103,31 @@ extension DetailRootView: ReactantUI, RootView {
                 make.centerX.equalTo(target.noView)
                 make.centerY.equalTo(target.noView)
             }
-            target.openingTimesLabel.snp.makeConstraints {
+            target.priceTitleLabel.snp.makeConstraints {
                 make in
                 make.left.equalTo(target).offset(12.0)
                 make.top.equalTo(target.noView.snp.bottom).offset(32.0)
             }
-            target.openTimesLabel.snp.makeConstraints {
+            target.priceLabel.snp.makeConstraints {
                 make in
-                make.centerY.equalTo(target.openingTimesLabel)
                 make.right.equalTo(target).offset(-12.0)
+                make.centerY.equalTo(target.priceTitleLabel)
+            }
+            target.separator.snp.makeConstraints {
+                make in
+                make.width.equalTo(target)
+                make.height.equalTo(2.0)
+                make.top.equalTo(target.priceLabel.snp.bottom).offset(24.0)
+            }
+            target.addressLabel.snp.makeConstraints {
+                make in
+                make.centerX.equalTo(target)
+                make.top.equalTo(target.separator.snp.bottom).offset(30.0)
+            }
+            target.subaddressLabel.snp.makeConstraints {
+                make in
+                make.centerX.equalTo(target)
+                make.top.equalTo(target.addressLabel.snp.bottom).offset(2.0)
             }
             #endif
         }

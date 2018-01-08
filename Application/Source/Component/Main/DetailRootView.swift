@@ -7,22 +7,37 @@
 //
 
 import Reactant
+import RxSwift
 
-final class DetailRootView: ViewBase<Toilet, Void> {
-    
+enum DetailAction {
+    case nextToilet
+}
+
+final class DetailRootView: ViewBase<Toilet, DetailAction> {
     
     let noView = UIView()
     let photoImageView = UIImageView() 
-    let openingTimesLabel = UILabel()
-    let openTimesLabel = UILabel()
+    let priceTitleLabel = UILabel()
+    let priceLabel = UILabel()
+    let separator = UIView()
+    let addressLabel = UILabel()
+    let subaddressLabel = UILabel()
+    let nextToiletButton = UIButton()
+    
+    override var actions: [Observable<DetailAction>] {
+        return [
+            nextToiletButton.rx.tap.rewrite(with: .nextToilet)
+        ]
+    }
     
     override func update() {
-        openTimesLabel.text = componentState.price
+        priceLabel.text = componentState.price
+        addressLabel.text = componentState.title
+        subaddressLabel.text = componentState.subtitle
     }
     
     override func loadView() {
         backgroundColor = .white
         noView.backgroundColor = .coolGrey 
     }
-    
 }
