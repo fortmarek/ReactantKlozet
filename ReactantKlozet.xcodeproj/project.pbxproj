@@ -22,10 +22,13 @@
 		F860AD992002C93500EEC753 /* GeneratedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD982002C93500EEC753 /* GeneratedUI.swift */; };
 		F860AD9F2003758100EEC753 /* UIColor+UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD9E2003758100EEC753 /* UIColor+UIFontExtension.swift */; };
 		F860ADA1200377F200EEC753 /* General.styles.xml in Resources */ = {isa = PBXBuildFile; fileRef = F860ADA0200377F200EEC753 /* General.styles.xml */; };
-		F860ADA32003832500EEC753 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADA22003832500EEC753 /* APIService.swift */; };
+		F860ADA32003832500EEC753 /* DetailToiletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADA22003832500EEC753 /* DetailToiletService.swift */; };
 		F860ADA52003941300EEC753 /* Toilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADA42003941300EEC753 /* Toilet.swift */; };
 		F860ADA7200395FB00EEC753 /* OpenTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADA6200395FB00EEC753 /* OpenTimes.swift */; };
 		F860ADA92003969C00EEC753 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADA82003969C00EEC753 /* Address.swift */; };
+		F860ADAD2003DB9900EEC753 /* DependencyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADAC2003DB9900EEC753 /* DependencyModule.swift */; };
+		F860ADAF2003DBE000EEC753 /* KlozetModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADAE2003DBE000EEC753 /* KlozetModule.swift */; };
+		F860ADB12003DCB500EEC753 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADB02003DCB500EEC753 /* MainWireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,10 +76,13 @@
 		F860AD982002C93500EEC753 /* GeneratedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedUI.swift; sourceTree = "<group>"; };
 		F860AD9E2003758100EEC753 /* UIColor+UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+UIFontExtension.swift"; sourceTree = "<group>"; };
 		F860ADA0200377F200EEC753 /* General.styles.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = General.styles.xml; sourceTree = "<group>"; };
-		F860ADA22003832500EEC753 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F860ADA22003832500EEC753 /* DetailToiletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailToiletService.swift; sourceTree = "<group>"; };
 		F860ADA42003941300EEC753 /* Toilet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toilet.swift; sourceTree = "<group>"; };
 		F860ADA6200395FB00EEC753 /* OpenTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTimes.swift; sourceTree = "<group>"; };
 		F860ADA82003969C00EEC753 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		F860ADAC2003DB9900EEC753 /* DependencyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyModule.swift; sourceTree = "<group>"; };
+		F860ADAE2003DBE000EEC753 /* KlozetModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlozetModule.swift; sourceTree = "<group>"; };
+		F860ADB02003DCB500EEC753 /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +201,7 @@
 		F860AD6F2002817300EEC753 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				F860ADB02003DCB500EEC753 /* MainWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -202,6 +209,8 @@
 		F860AD702002817C00EEC753 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				F860ADAC2003DB9900EEC753 /* DependencyModule.swift */,
+				F860ADAE2003DBE000EEC753 /* KlozetModule.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -209,7 +218,7 @@
 		F860AD712002818500EEC753 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				F860ADA22003832500EEC753 /* APIService.swift */,
+				F860ADA22003832500EEC753 /* DetailToiletService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -569,11 +578,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F860ADAF2003DBE000EEC753 /* KlozetModule.swift in Sources */,
+				F860ADB12003DCB500EEC753 /* MainWireframe.swift in Sources */,
 				F860ADA52003941300EEC753 /* Toilet.swift in Sources */,
 				F860AD3E2002806C00EEC753 /* ReactantKlozet.xcdatamodeld in Sources */,
-				F860ADA32003832500EEC753 /* APIService.swift in Sources */,
+				F860ADA32003832500EEC753 /* DetailToiletService.swift in Sources */,
 				F860AD992002C93500EEC753 /* GeneratedUI.swift in Sources */,
 				F860ADA92003969C00EEC753 /* Address.swift in Sources */,
+				F860ADAD2003DB9900EEC753 /* DependencyModule.swift in Sources */,
 				F860AD8F2002C57700EEC753 /* DetailRootView.swift in Sources */,
 				F860ADA7200395FB00EEC753 /* OpenTimes.swift in Sources */,
 				F860AD8D2002C50E00EEC753 /* DetailController.swift in Sources */,
