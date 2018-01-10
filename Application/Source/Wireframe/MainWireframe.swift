@@ -25,13 +25,18 @@ final class MainWireframe: Wireframe {
         
         return navigationController
     }
-    
+        
     
     func createDetailController() -> DetailController {
         return create { provider in
             let dependencies = DetailController.Dependencies(toiletService: module.toiletService)
             
-            return DetailController(dependencies: dependencies)
+            let reactions = DetailController.Reactions(
+                openImage: { image in
+                    provider.navigation?.push(controller: UIViewController())
+            })
+            
+            return DetailController(dependencies: dependencies, reactions: reactions)
         }
     }
 }

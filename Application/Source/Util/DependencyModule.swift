@@ -9,4 +9,5 @@
 
 protocol DependencyModule {
     var toiletService: ToiletService {get}
+    var imageService: ImageService {get}
 }

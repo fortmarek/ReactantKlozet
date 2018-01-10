@@ -9,8 +9,10 @@
 final class KlozetModule: DependencyModule {
     
     let toiletService: ToiletService
+    let imageService: ImageService
     
     init() {
-        toiletService = ToiletService()
+        imageService = ImageService()
+        toiletService = ToiletService(imageService: imageService)
     }
 }

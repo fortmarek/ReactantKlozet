@@ -8,36 +8,40 @@
     type="DetailRootView"
     rootView="true">
 
+    <ImageView
+      field="toiletImageView"
+      layout:height="169"
+      layout:left="super"
+      layout:right="super"
+      layout:top="super" />
 
-    <Container
-        field="noView"
-        layout:height="169"
-        layout:left="super"
-        layout:right="super"
-        layout:top="super" >
-        <ImageView
-          field="photoImageView"
-          image="NoCamera"
-          layout:center="super" />
-    </Container>
+
+    <ImageView
+      field="photoImageView"
+      image="NoCamera"
+      layout:center="toiletImageView" />
+
+      <Button
+        field="imageToiletButton"
+        layout:edges="toiletImageView"/>
 
     <Label
       style=":general:defaultLabel"
       font=":heavy@17"
-      field="priceTitleLabel"
       text="Price"
       layout:left="super offset(12)"
-      layout:top="noView.bottom offset(32)"/>
+      layout:centerY="priceLabel"
+      />
 
       <Label
         field="priceLabel"
         font=":heavy@17"
         textColor="red"
         layout:right="super inset(12)"
-        layout:centerY="priceTitleLabel"/>
+        layout:top="toiletImageView.bottom offset(32)"
+        />
 
         <Container
-          field="separator"
           backgroundColor="black"
           layout:height="2"
           layout:width="super"
@@ -49,7 +53,7 @@
           font=":bold@18"
           field="addressLabel"
           layout:centerX="super"
-          layout:top="separator.bottom offset(30)" />
+          layout:top="priceLabel.bottom offset(50)" />
 
         <Label
           style=":general:defaultLabel"

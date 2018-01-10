@@ -30,6 +30,8 @@
 		F860ADAF2003DBE000EEC753 /* KlozetModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADAE2003DBE000EEC753 /* KlozetModule.swift */; };
 		F860ADB12003DCB500EEC753 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADB02003DCB500EEC753 /* MainWireframe.swift */; };
 		F860ADB32003E4FB00EEC753 /* ToiletsBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADB22003E4FB00EEC753 /* ToiletsBox.swift */; };
+		F860ADB520055C6800EEC753 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADB420055C6800EEC753 /* ImageService.swift */; };
+		F860ADB72006073500EEC753 /* ImageCountBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADB62006073500EEC753 /* ImageCountBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		F860ADAE2003DBE000EEC753 /* KlozetModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlozetModule.swift; sourceTree = "<group>"; };
 		F860ADB02003DCB500EEC753 /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
 		F860ADB22003E4FB00EEC753 /* ToiletsBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsBox.swift; sourceTree = "<group>"; };
+		F860ADB420055C6800EEC753 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		F860ADB62006073500EEC753 /* ImageCountBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCountBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				F860ADA22003832500EEC753 /* DetailToiletService.swift */,
+				F860ADB420055C6800EEC753 /* ImageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 			children = (
 				F860ADA42003941300EEC753 /* Toilet.swift */,
 				F860ADB22003E4FB00EEC753 /* ToiletsBox.swift */,
+				F860ADB62006073500EEC753 /* ImageCountBox.swift */,
 				F860ADA6200395FB00EEC753 /* OpenTimes.swift */,
 				F860ADA82003969C00EEC753 /* Address.swift */,
 			);
@@ -252,19 +258,19 @@
 		F860AD74200281A400EEC753 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				F860AD75200281AA00EEC753 /* Main */,
+				F860AD75200281AA00EEC753 /* DetailController */,
 			);
 			path = Component;
 			sourceTree = "<group>";
 		};
-		F860AD75200281AA00EEC753 /* Main */ = {
+		F860AD75200281AA00EEC753 /* DetailController */ = {
 			isa = PBXGroup;
 			children = (
 				F860AD8C2002C50E00EEC753 /* DetailController.swift */,
 				F860AD8E2002C57700EEC753 /* DetailRootView.swift */,
 				F860AD902002C5CD00EEC753 /* DetailRootView.ui.xml */,
 			);
-			path = Main;
+			path = DetailController;
 			sourceTree = "<group>";
 		};
 		F860AD972002C92800EEC753 /* Generated */ = {
@@ -584,11 +590,13 @@
 				F860ADB32003E4FB00EEC753 /* ToiletsBox.swift in Sources */,
 				F860ADAF2003DBE000EEC753 /* KlozetModule.swift in Sources */,
 				F860ADB12003DCB500EEC753 /* MainWireframe.swift in Sources */,
+				F860ADB72006073500EEC753 /* ImageCountBox.swift in Sources */,
 				F860ADA52003941300EEC753 /* Toilet.swift in Sources */,
 				F860AD3E2002806C00EEC753 /* ReactantKlozet.xcdatamodeld in Sources */,
 				F860ADA32003832500EEC753 /* DetailToiletService.swift in Sources */,
 				F860AD992002C93500EEC753 /* GeneratedUI.swift in Sources */,
 				F860ADA92003969C00EEC753 /* Address.swift in Sources */,
+				F860ADB520055C6800EEC753 /* ImageService.swift in Sources */,
 				F860ADAD2003DB9900EEC753 /* DependencyModule.swift in Sources */,
 				F860AD8F2002C57700EEC753 /* DetailRootView.swift in Sources */,
 				F860ADA7200395FB00EEC753 /* OpenTimes.swift in Sources */,
