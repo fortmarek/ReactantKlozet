@@ -42,7 +42,6 @@ final class DetailController: ControllerBase<(toilets: [Toilet], selectedIndex: 
     
     
     private func setToiletImage(_ imageCount: Int) {
-        print(componentState.selectedIndex)
         guard componentState.toilets.isEmpty == false else {return}
         let toiletId: Int = componentState.toilets[componentState.selectedIndex].toiletId
         guard imageCount > 0 else {rootView.componentState.image = nil; return}

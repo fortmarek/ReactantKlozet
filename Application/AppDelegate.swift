@@ -28,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         activateLiveReload(in: window)
         
+        Configuration.global.set(Properties.Style.controllerRoot, to: GeneralStyles.controllerRootView)
+        
         return true
     }
     

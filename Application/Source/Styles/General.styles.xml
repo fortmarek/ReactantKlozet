@@ -1,3 +1,4 @@
 <styleGroup name="general">
+    <ViewStyle name="controllerRootView" backgroundColor="#FFFFFF"/>
     <LabelStyle name="defaultLabel" textColor="#3F3F3F" />
 </styleGroup>

@@ -7,6 +7,9 @@ import ReactantLiveUI
 #endif
 
 struct GeneralStyles {
+    static func controllerRootView(_ view: UIView) {
+        view.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    }
     static func defaultLabel(_ view: UILabel) {
         view.textColor = UIColor(red: 0.247058823529412, green: 0.247058823529412, blue: 0.247058823529412, alpha: 1.0)
     }
@@ -19,7 +22,7 @@ import ReactantLiveUI
 #endif
 import Reactant
 import UIKit
-// Generated from /Users/marekfort/Development/reactant_learn/ReactantKlozet/Application/Source/Component/Main/DetailRootView.ui.xml
+// Generated from /Users/marekfort/Development/reactant_learn/ReactantKlozet/Application/Source/Component/ToiletDetail/DetailRootView.ui.xml
 extension DetailRootView: ReactantUI, RootView {
     var edgesForExtendedLayout: UIRectEdge {
         #if (arch(i386) || arch(x86_64)) && (os(iOS) || os(tvOS))
@@ -43,7 +46,7 @@ extension DetailRootView: ReactantUI, RootView {
         fileprivate static var associatedObjectKey = 0 as UInt8
         
         var xmlPath: String {
-            return "/Users/marekfort/Development/reactant_learn/ReactantKlozet/Application/Source/Component/Main/DetailRootView.ui.xml"
+            return "/Users/marekfort/Development/reactant_learn/ReactantKlozet/Application/Source/Component/ToiletDetail/DetailRootView.ui.xml"
         }
         
         var typeName: String {
@@ -165,6 +168,79 @@ extension DetailRootView: ReactantUI, RootView {
     struct Styles {
     }
 }
+// Generated from /Users/marekfort/Development/reactant_learn/ReactantKlozet/Application/Source/Component/ToiletImage/ToiletImageRootView.ui.xml
+extension ToiletImageRootView: ReactantUI, RootView {
+    var edgesForExtendedLayout: UIRectEdge {
+        #if (arch(i386) || arch(x86_64)) && (os(iOS) || os(tvOS))
+        return ReactantLiveUIManager.shared.extendedEdges(of: self)
+        #else
+        return []
+        #endif
+    }
+    
+    var rui: ToiletImageRootView.RUIContainer {
+        return Reactant.associatedObject(self, key: &ToiletImageRootView.RUIContainer.associatedObjectKey) {
+            return ToiletImageRootView.RUIContainer(target: self)
+        }
+    }
+    
+    var __rui: Reactant.ReactantUIContainer {
+        return rui
+    }
+    
+    final class RUIContainer: Reactant.ReactantUIContainer {
+        fileprivate static var associatedObjectKey = 0 as UInt8
+        
+        var xmlPath: String {
+            return "/Users/marekfort/Development/reactant_learn/ReactantKlozet/Application/Source/Component/ToiletImage/ToiletImageRootView.ui.xml"
+        }
+        
+        var typeName: String {
+            return "ToiletImageRootView"
+        }
+        
+        let constraints = ToiletImageRootView.LayoutContainer()
+        
+        private weak var target: ToiletImageRootView?
+        
+        fileprivate init(target: ToiletImageRootView) {
+            self.target = target
+        }
+        
+        func setupReactantUI() {
+            guard let target = self.target else { /* FIXME Should we fatalError here? */ return }
+            #if (arch(i386) || arch(x86_64)) && (os(iOS) || os(tvOS))
+            ReactantLiveUIManager.shared.register(target) {
+                _, _ in
+                return false
+            }
+            #else
+            target.toiletImageView.contentMode = UIViewContentMode.scaleAspectFit
+            target.addSubview(target.toiletImageView)
+            
+            target.toiletImageView.snp.makeConstraints {
+                make in
+                make.left.equalTo(target)
+                make.right.equalTo(target)
+                make.top.equalTo(target)
+                make.bottom.equalTo(target)
+            }
+            #endif
+        }
+        
+        static func destroyReactantUI(target: UIView) {
+            #if (arch(i386) || arch(x86_64)) && (os(iOS) || os(tvOS))
+            guard let knownTarget = target as? ToiletImageRootView else { /* FIXME Should we fatalError here? */ return }
+            ReactantLiveUIManager.shared.unregister(knownTarget)
+            #endif
+        }
+    }
+    
+    final class LayoutContainer {
+    }
+    struct Styles {
+    }
+}
 #if (arch(i386) || arch(x86_64)) && (os(iOS) || os(tvOS))
 struct GeneratedReactantLiveUIConfiguration: ReactantLiveUIConfiguration {
     let rootDir = "/Users/marekfort/Development/reactant_learn/ReactantKlozet/Application/Source"
@@ -172,6 +248,7 @@ struct GeneratedReactantLiveUIConfiguration: ReactantLiveUIConfiguration {
         "/Users/marekfort/Development/reactant_learn/ReactantKlozet/Application/Source/Styles/General.styles.xml",
     ]
     let componentTypes: [String: UIView.Type] = [
+        "ToiletImageRootView": ToiletImageRootView.self,
         "DetailRootView": DetailRootView.self,
     ]
 }
