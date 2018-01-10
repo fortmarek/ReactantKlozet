@@ -8,7 +8,7 @@
 
 import Reactant
 
-final class ToiletListController: ControllerBase<Void, ToiletListRootView>, UITableViewDelegate {
+final class ToiletListController: ControllerBase<Void, ToiletListRootView> {
     
     struct Properties {
         let toilets: [Toilet]
@@ -19,6 +19,8 @@ final class ToiletListController: ControllerBase<Void, ToiletListRootView>, UITa
     init(properties: Properties) {
         self.properties = properties
         super.init()
+        
+        rootView.componentState = properties.toilets
     }
 
 }

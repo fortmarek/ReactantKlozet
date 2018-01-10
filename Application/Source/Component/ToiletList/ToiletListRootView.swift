@@ -8,23 +8,20 @@
 
 import Reactant
 
-final class ToiletListRootView: PlainTableView<ToiletCell> {
+final class ToiletListRootView: ViewBase<[Toilet], Toilet>  {
     
-    override var edgesForExtendedLayout: UIRectEdge {
-        return .all
-    }
+    let tableView: PlainTableView<ToiletCell> = PlainTableView(cellFactory: ToiletCell.init, reloadable: false)
     
-    init() {
-        super.init(cellFactory: ToiletCell.init, reloadable: false)
-        
+    override init() {
         tableView.rowHeight = ToiletCell.height
         tableView.separatorStyle = .none
-        tableView.tableFooterView = UIView()
-        tableView.contentInset.bottom = 12
+        tableView.footerView = UIView()
+        tableView.tableView.contentInset.bottom = 12
+        super.init()
     }
     
-    required init(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    override func update() {
+        tableView.componentState = .items(componentState)
     }
     
 }

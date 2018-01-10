@@ -6,5 +6,27 @@
     xsi:schemaLocation="http://schema.reactant.tech/ui http://schema.reactant.tech/ui.xsd
     http://schema.reactant.tech/layout http://schema.reactant.tech/layout.xsd"
     type="ToiletCell">
-</Component>
+    <StackView
+      layout:centerY="super"
+      axis="vertical"
+      spacing="2" >
+      <Label
+        field="addressLabel"
+        font=":bold@18"
+        layout:left="20"
+        textColor="black" />
+      <Label
+        field="subaddressLabel"
+        font=":medium@14"
+        layout:left="addressLabel.left"
+        textColor="black" />
+    </StackView>
 
+    <Label
+      field="priceLabel"
+      layout:centerY="super"
+      layout:right="super inset(20)"
+      textColor="green" />
+
+
+</Component>
