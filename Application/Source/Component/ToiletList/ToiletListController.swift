@@ -19,7 +19,6 @@ final class ToiletListController: ControllerBase<Void, ToiletListRootView>, UITa
     init(properties: Properties) {
         self.properties = properties
         super.init()
-        
-        rootView.componentState = .items(properties.toilets)
     }
+
 }
