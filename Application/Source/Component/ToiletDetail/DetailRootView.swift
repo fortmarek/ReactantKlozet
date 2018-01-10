@@ -13,6 +13,7 @@ import CoreLocation
 enum DetailAction {
     case nextToilet
     case showToiletImage
+    case showToiletList
 }
 
 final class DetailRootView: ViewBase<(toilet: Toilet, image: UIImage?), DetailAction> {
@@ -24,11 +25,13 @@ final class DetailRootView: ViewBase<(toilet: Toilet, image: UIImage?), DetailAc
     let addressLabel = UILabel()
     let subaddressLabel = UILabel()
     let nextToiletButton = UIButton()
+    let listButton = UIButton()
     
     override var actions: [Observable<DetailAction>] {
         return [
             nextToiletButton.rx.tap.rewrite(with: .nextToilet),
-            imageToiletButton.rx.tap.rewrite(with: .showToiletImage)
+            imageToiletButton.rx.tap.rewrite(with: .showToiletImage),
+            listButton.rx.tap.rewrite(with: .showToiletList)
         ]
     }
     

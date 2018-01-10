@@ -10,6 +10,11 @@
 		14E22145F2A88A37D549C160 /* Pods_ReactantKlozetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E0A050ED763D2EE3FCEF93 /* Pods_ReactantKlozetTests.framework */; };
 		563E3628E1DA6228BF7A56FF /* Pods_ReactantKlozetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D621EDA09C5838702A894 /* Pods_ReactantKlozetUITests.framework */; };
 		9F42B10E7DEAF0D074FEDAD0 /* Pods_ReactantKlozet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B90086362443AF4DF543A9 /* Pods_ReactantKlozet.framework */; };
+		F83B0FEE20066D02008A28AF /* General.styles.xml in Resources */ = {isa = PBXBuildFile; fileRef = F83B0FED20066D02008A28AF /* General.styles.xml */; };
+		F83B0FF320066DAD008A28AF /* ToiletListRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B0FF020066DAC008A28AF /* ToiletListRootView.swift */; };
+		F83B0FF520066DAD008A28AF /* ToiletListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B0FF220066DAD008A28AF /* ToiletListController.swift */; };
+		F83B0FF720068CE8008A28AF /* ToiletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B0FF620068CE8008A28AF /* ToiletCell.swift */; };
+		F83B0FF920068D83008A28AF /* ToiletCell.ui.xml in Resources */ = {isa = PBXBuildFile; fileRef = F83B0FF820068D83008A28AF /* ToiletCell.ui.xml */; };
 		F860AD362002806C00EEC753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD352002806C00EEC753 /* AppDelegate.swift */; };
 		F860AD3E2002806C00EEC753 /* ReactantKlozet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F860AD3C2002806C00EEC753 /* ReactantKlozet.xcdatamodeld */; };
 		F860AD402002806C00EEC753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F860AD3F2002806C00EEC753 /* Assets.xcassets */; };
@@ -21,7 +26,6 @@
 		F860AD912002C5CD00EEC753 /* DetailRootView.ui.xml in Resources */ = {isa = PBXBuildFile; fileRef = F860AD902002C5CD00EEC753 /* DetailRootView.ui.xml */; };
 		F860AD992002C93500EEC753 /* GeneratedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD982002C93500EEC753 /* GeneratedUI.swift */; };
 		F860AD9F2003758100EEC753 /* UIColor+UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860AD9E2003758100EEC753 /* UIColor+UIFontExtension.swift */; };
-		F860ADA1200377F200EEC753 /* General.styles.xml in Resources */ = {isa = PBXBuildFile; fileRef = F860ADA0200377F200EEC753 /* General.styles.xml */; };
 		F860ADA32003832500EEC753 /* DetailToiletService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADA22003832500EEC753 /* DetailToiletService.swift */; };
 		F860ADA52003941300EEC753 /* Toilet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADA42003941300EEC753 /* Toilet.swift */; };
 		F860ADA7200395FB00EEC753 /* OpenTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADA6200395FB00EEC753 /* OpenTimes.swift */; };
@@ -64,6 +68,11 @@
 		A9B90086362443AF4DF543A9 /* Pods_ReactantKlozet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactantKlozet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E0A050ED763D2EE3FCEF93 /* Pods_ReactantKlozetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactantKlozetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50017BB947638455F665742 /* Pods-ReactantKlozet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactantKlozet.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactantKlozet/Pods-ReactantKlozet.release.xcconfig"; sourceTree = "<group>"; };
+		F83B0FED20066D02008A28AF /* General.styles.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = General.styles.xml; sourceTree = "<group>"; };
+		F83B0FF020066DAC008A28AF /* ToiletListRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletListRootView.swift; sourceTree = "<group>"; };
+		F83B0FF220066DAD008A28AF /* ToiletListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletListController.swift; sourceTree = "<group>"; };
+		F83B0FF620068CE8008A28AF /* ToiletCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletCell.swift; sourceTree = "<group>"; };
+		F83B0FF820068D83008A28AF /* ToiletCell.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ToiletCell.ui.xml; sourceTree = "<group>"; };
 		F860AD322002806C00EEC753 /* ReactantKlozet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactantKlozet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F860AD352002806C00EEC753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F860AD3D2002806C00EEC753 /* ReactantKlozet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReactantKlozet.xcdatamodel; sourceTree = "<group>"; };
@@ -81,7 +90,6 @@
 		F860AD902002C5CD00EEC753 /* DetailRootView.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DetailRootView.ui.xml; sourceTree = "<group>"; };
 		F860AD982002C93500EEC753 /* GeneratedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedUI.swift; sourceTree = "<group>"; };
 		F860AD9E2003758100EEC753 /* UIColor+UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+UIFontExtension.swift"; sourceTree = "<group>"; };
-		F860ADA0200377F200EEC753 /* General.styles.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = General.styles.xml; sourceTree = "<group>"; };
 		F860ADA22003832500EEC753 /* DetailToiletService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailToiletService.swift; sourceTree = "<group>"; };
 		F860ADA42003941300EEC753 /* Toilet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toilet.swift; sourceTree = "<group>"; };
 		F860ADA6200395FB00EEC753 /* OpenTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTimes.swift; sourceTree = "<group>"; };
@@ -146,6 +154,17 @@
 				609D621EDA09C5838702A894 /* Pods_ReactantKlozetUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F83B0FEF20066D9D008A28AF /* ToiletList */ = {
+			isa = PBXGroup;
+			children = (
+				F83B0FF220066DAD008A28AF /* ToiletListController.swift */,
+				F83B0FF020066DAC008A28AF /* ToiletListRootView.swift */,
+				F83B0FF620068CE8008A28AF /* ToiletCell.swift */,
+				F83B0FF820068D83008A28AF /* ToiletCell.ui.xml */,
+			);
+			path = ToiletList;
 			sourceTree = "<group>";
 		};
 		F860AD292002806C00EEC753 = {
@@ -264,6 +283,7 @@
 		F860AD74200281A400EEC753 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				F83B0FEF20066D9D008A28AF /* ToiletList */,
 				F860ADB820064CB400EEC753 /* ToiletImage */,
 				F860AD75200281AA00EEC753 /* ToiletDetail */,
 			);
@@ -292,7 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				F860AD9E2003758100EEC753 /* UIColor+UIFontExtension.swift */,
-				F860ADA0200377F200EEC753 /* General.styles.xml */,
+				F83B0FED20066D02008A28AF /* General.styles.xml */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -425,8 +445,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F860AD912002C5CD00EEC753 /* DetailRootView.ui.xml in Resources */,
-				F860ADA1200377F200EEC753 /* General.styles.xml in Resources */,
 				F860AD432002806C00EEC753 /* LaunchScreen.storyboard in Resources */,
+				F83B0FEE20066D02008A28AF /* General.styles.xml in Resources */,
+				F83B0FF920068D83008A28AF /* ToiletCell.ui.xml in Resources */,
 				F860AD402002806C00EEC753 /* Assets.xcassets in Resources */,
 				F860ADBE20064D7100EEC753 /* ToiletImageRootView.ui.xml in Resources */,
 			);
@@ -611,7 +632,9 @@
 				F860ADBA20064CD500EEC753 /* TolietImageController.swift in Sources */,
 				F860ADB72006073500EEC753 /* ImageCountBox.swift in Sources */,
 				F860ADA52003941300EEC753 /* Toilet.swift in Sources */,
+				F83B0FF520066DAD008A28AF /* ToiletListController.swift in Sources */,
 				F860AD3E2002806C00EEC753 /* ReactantKlozet.xcdatamodeld in Sources */,
+				F83B0FF720068CE8008A28AF /* ToiletCell.swift in Sources */,
 				F860ADA32003832500EEC753 /* DetailToiletService.swift in Sources */,
 				F860AD992002C93500EEC753 /* GeneratedUI.swift in Sources */,
 				F860ADA92003969C00EEC753 /* Address.swift in Sources */,
@@ -620,6 +643,7 @@
 				F860AD8F2002C57700EEC753 /* DetailRootView.swift in Sources */,
 				F860ADA7200395FB00EEC753 /* OpenTimes.swift in Sources */,
 				F860AD8D2002C50E00EEC753 /* DetailController.swift in Sources */,
+				F83B0FF320066DAD008A28AF /* ToiletListRootView.swift in Sources */,
 				F860AD9F2003758100EEC753 /* UIColor+UIFontExtension.swift in Sources */,
 				F860AD362002806C00EEC753 /* AppDelegate.swift in Sources */,
 				F860ADBC20064D3C00EEC753 /* ToiletImageRootView.swift in Sources */,

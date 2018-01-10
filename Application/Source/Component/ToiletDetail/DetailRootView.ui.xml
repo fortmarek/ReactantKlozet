@@ -69,6 +69,13 @@
             title="Next Toilet!"
             titleColor="red" />
 
+          <Button
+            field="listButton"
+            title="Show list of toilets"
+            titleColor="magenta"
+            layout:centerX="super"
+            layout:top="nextToiletButton.bottom offset(20)" />
+
 
 
 

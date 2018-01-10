@@ -17,6 +17,7 @@ final class DetailController: ControllerBase<(toilets: [Toilet], selectedIndex: 
     
     struct Reactions {
         let openImage: (UIImage) -> Void
+        let openList: ([Toilet]) -> Void
     }
     
     private let dependencies: Dependencies
@@ -53,10 +54,6 @@ final class DetailController: ControllerBase<(toilets: [Toilet], selectedIndex: 
         }
     }
     
-    private func downloadToiletImages() {
-        
-    }
-    
     override func update() {
         dependencies.toiletService.getToiletsImageCount(with: componentState.selectedIndex).subscribe(onNext: { [weak self] result in
             //TODO: Handle errors
@@ -77,6 +74,8 @@ final class DetailController: ControllerBase<(toilets: [Toilet], selectedIndex: 
         case .showToiletImage:
             guard let toiletImage = rootView.componentState.image else {return}
             reactions.openImage(toiletImage)
+        case .showToiletList:
+            reactions.openList(componentState.toilets)
         }
         
     }
