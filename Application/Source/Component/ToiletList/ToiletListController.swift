@@ -8,7 +8,7 @@
 
 import Reactant
 
-final class ToiletListController: ControllerBase<Void, ToiletListRootView> {
+class ToiletListController: ControllerBase<Void, ToiletListRootView> {
     
     struct Properties {
         let toilets: [Toilet]

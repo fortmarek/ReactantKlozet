@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.6.0)
+  - Cuckoo (0.10.2)
   - DataMapper (0.2.0):
     - DataMapper/Core (= 0.2.0)
     - DataMapper/JsonSerializer (= 0.2.0)
@@ -20,6 +21,8 @@ PODS:
     - Fetcher/Core
     - RxSwift (~> 4.0)
   - Kingfisher (4.6.1)
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
   - Reactant (1.1.0):
     - Reactant/Core (= 1.1.0)
     - Reactant/Result (= 1.1.0)
@@ -82,10 +85,13 @@ PODS:
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
+  - Cuckoo
   - DataMapper
   - Fetcher
   - Fetcher/RxFetcher
   - Kingfisher
+  - Nimble
+  - Quick
   - Reactant/ActivityIndicator
   - Reactant/All-iOS
   - ReactantLiveUI
@@ -93,10 +99,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Cuckoo: e53c52f97edfea8142da66a95400ca5897e22c8b
   DataMapper: f33d650f587a3241216763ee6377e3c3f1041c47
   Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   Fetcher: d09e86cb5c3d3f3c5a7f06d1f41b852d3fe3fdf0
   Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   Reactant: 1910427bc0b05afeeb4e959e24bdd768dedb5258
   ReactantLiveUI: 6d6d8b2aaebcf00aec456b9b948333f9e0a896e9
   ReactantUI: 6d209cf3e780f0f0efd0b2c7424f59992e759320
@@ -107,6 +116,6 @@ SPEC CHECKSUMS:
   RxSwift: c6e3b1c7b325c7d121cd4327e9d98b7ed746b570
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: beb5415fedf20de36dad93d254cdd95c8ba4b586
+PODFILE CHECKSUM: 1c419c03d26b5c94bc00ac812ccb4f901fc03f08
 
 COCOAPODS: 1.2.1

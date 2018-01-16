@@ -9,7 +9,7 @@
 import Reactant
 import Kingfisher
 
-final class DetailController: ControllerBase<(toilets: [Toilet], selectedIndex: Int), DetailRootView> {
+class DetailController: ControllerBase<(toilets: [Toilet], selectedIndex: Int), DetailRootView> {
     
     struct Dependencies {
         let toiletService: ToiletService
@@ -42,7 +42,7 @@ final class DetailController: ControllerBase<(toilets: [Toilet], selectedIndex: 
     
     
     
-    private func setToiletImage(_ imageCount: Int) {
+    func setToiletImage(_ imageCount: Int) {
         guard componentState.toilets.isEmpty == false else {return}
         let toiletId: Int = componentState.toilets[componentState.selectedIndex].toiletId
         guard imageCount > 0 else {rootView.componentState.image = nil; return}

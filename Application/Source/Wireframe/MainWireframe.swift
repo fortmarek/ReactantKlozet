@@ -34,9 +34,7 @@ final class MainWireframe: Wireframe {
             let reactions = DetailController.Reactions(openImage: { image in
                 provider.navigation?.push(controller: self.toiletImageController(toiletImage: image))
             }, openList: { toilets in
-                print(toilets.count)
                 let toiletListProperties = ToiletListController.Properties(toilets: toilets)
-                //THIS IS WHERE ERROR OCCURES
                 let toiletListController = ToiletListController(properties: toiletListProperties)
                 let toiletListBranchNavigation = self.branchNavigation(controller: toiletListController)
                 provider.navigation?.present(controller: toiletListBranchNavigation)

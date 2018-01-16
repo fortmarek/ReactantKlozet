@@ -10,6 +10,8 @@
 		14E22145F2A88A37D549C160 /* Pods_ReactantKlozetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6E0A050ED763D2EE3FCEF93 /* Pods_ReactantKlozetTests.framework */; };
 		563E3628E1DA6228BF7A56FF /* Pods_ReactantKlozetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D621EDA09C5838702A894 /* Pods_ReactantKlozetUITests.framework */; };
 		9F42B10E7DEAF0D074FEDAD0 /* Pods_ReactantKlozet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B90086362443AF4DF543A9 /* Pods_ReactantKlozet.framework */; };
+		F832B47A200D356A00613F35 /* DetailControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832B479200D356A00613F35 /* DetailControllerTests.swift */; };
+		F832B47C200D410800613F35 /* TestModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832B47B200D410800613F35 /* TestModule.swift */; };
 		F83B0FEE20066D02008A28AF /* General.styles.xml in Resources */ = {isa = PBXBuildFile; fileRef = F83B0FED20066D02008A28AF /* General.styles.xml */; };
 		F83B0FF320066DAD008A28AF /* ToiletListRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B0FF020066DAC008A28AF /* ToiletListRootView.swift */; };
 		F83B0FF520066DAD008A28AF /* ToiletListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B0FF220066DAD008A28AF /* ToiletListController.swift */; };
@@ -40,6 +42,7 @@
 		F860ADBA20064CD500EEC753 /* TolietImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADB920064CD500EEC753 /* TolietImageController.swift */; };
 		F860ADBC20064D3C00EEC753 /* ToiletImageRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F860ADBB20064D3C00EEC753 /* ToiletImageRootView.swift */; };
 		F860ADBE20064D7100EEC753 /* ToiletImageRootView.ui.xml in Resources */ = {isa = PBXBuildFile; fileRef = F860ADBD20064D7100EEC753 /* ToiletImageRootView.ui.xml */; };
+		F8FE862B200D33A100A9EAA9 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FE862A200D33A100A9EAA9 /* GeneratedMocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,8 @@
 		A9B90086362443AF4DF543A9 /* Pods_ReactantKlozet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactantKlozet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E0A050ED763D2EE3FCEF93 /* Pods_ReactantKlozetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactantKlozetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50017BB947638455F665742 /* Pods-ReactantKlozet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactantKlozet.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactantKlozet/Pods-ReactantKlozet.release.xcconfig"; sourceTree = "<group>"; };
+		F832B479200D356A00613F35 /* DetailControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailControllerTests.swift; sourceTree = "<group>"; };
+		F832B47B200D410800613F35 /* TestModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModule.swift; sourceTree = "<group>"; };
 		F83B0FED20066D02008A28AF /* General.styles.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = General.styles.xml; sourceTree = "<group>"; };
 		F83B0FF020066DAC008A28AF /* ToiletListRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletListRootView.swift; sourceTree = "<group>"; };
 		F83B0FF220066DAD008A28AF /* ToiletListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletListController.swift; sourceTree = "<group>"; };
@@ -105,6 +110,7 @@
 		F860ADB920064CD500EEC753 /* TolietImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TolietImageController.swift; sourceTree = "<group>"; };
 		F860ADBB20064D3C00EEC753 /* ToiletImageRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletImageRootView.swift; sourceTree = "<group>"; };
 		F860ADBD20064D7100EEC753 /* ToiletImageRootView.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ToiletImageRootView.ui.xml; sourceTree = "<group>"; };
+		F8FE862A200D33A100A9EAA9 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +214,9 @@
 		F860AD4C2002806C00EEC753 /* ReactantKlozetTests */ = {
 			isa = PBXGroup;
 			children = (
+				F8FE862A200D33A100A9EAA9 /* GeneratedMocks.swift */,
+				F832B47B200D410800613F35 /* TestModule.swift */,
+				F832B479200D356A00613F35 /* DetailControllerTests.swift */,
 				F860AD4D2002806C00EEC753 /* ReactantKlozetTests.swift */,
 				F860AD4F2002806C00EEC753 /* Info.plist */,
 			);
@@ -359,6 +368,7 @@
 			buildConfigurationList = F860AD602002806D00EEC753 /* Build configuration list for PBXNativeTarget "ReactantKlozetTests" */;
 			buildPhases = (
 				8BAB203A18D77BD89CCA9169 /* [CP] Check Pods Manifest.lock */,
+				F8FE8629200D2C4A00A9EAA9 /* ShellScript */,
 				F860AD452002806C00EEC753 /* Sources */,
 				F860AD462002806C00EEC753 /* Frameworks */,
 				F860AD472002806C00EEC753 /* Resources */,
@@ -623,6 +633,19 @@
 			shellPath = /bin/sh;
 			shellScript = "pushd \"$PODS_ROOT/ReactantUI\"\nenv -i HOME=\"$HOME\" PATH=\"$PATH\" swift build\npopd\n# Go into directory where you'll have `.ui.xml` files.\ncd \"$SRCROOT/Application/Source\"\n# Run reactant-ui generator and save the output to a single `.swift` file\n\"$PODS_ROOT/ReactantUI/.build/debug/reactant-ui\" --enable-live > \"$SRCROOT/Application/Generated/GeneratedUI.swift\"";
 		};
+		F8FE8629200D2C4A00A9EAA9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "OUTPUT_FILE=\"$PROJECT_DIR/ReactantKlozetTests/GeneratedMocks.swift\"\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"$PROJECT_DIR\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"$PROJECT_DIR/Application/Source/\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n${PODS_ROOT}/Cuckoo/run generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$INPUT_DIR/Component/ToiletDetail/DetailController.swift\" \\\n\"$INPUT_DIR/ToiletList/ToiletListController.swift\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -659,6 +682,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F860AD4E2002806C00EEC753 /* ReactantKlozetTests.swift in Sources */,
+				F832B47C200D410800613F35 /* TestModule.swift in Sources */,
+				F8FE862B200D33A100A9EAA9 /* GeneratedMocks.swift in Sources */,
+				F832B47A200D356A00613F35 /* DetailControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

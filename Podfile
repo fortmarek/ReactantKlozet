@@ -1,9 +1,14 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '11.0'
+use_frameworks!
+
+def testing_pods
+  pod 'Cuckoo'
+  pod 'Nimble'
+  pod 'Quick'
+end
 
 target 'ReactantKlozet' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
 
   # Pods for ReactantKlozet
   pod 'Reactant/All-iOS'
@@ -18,6 +23,7 @@ target 'ReactantKlozet' do
   target 'ReactantKlozetTests' do
     inherit! :search_paths
     # Pods for testing
+    testing_pods
   end
 
   target 'ReactantKlozetUITests' do

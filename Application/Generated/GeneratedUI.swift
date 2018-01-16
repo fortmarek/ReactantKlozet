@@ -136,21 +136,23 @@ extension ToiletCell: ReactantUI {
                 return false
             }
             #else
-            let temp_Container_1 = ContainerView()
-            target.addSubview(temp_Container_1)
+            let temp_StackView_1 = UIStackView()
+            temp_StackView_1.spacing = 2.0
+            temp_StackView_1.axis = UILayoutConstraintAxis.vertical
+            target.addSubview(temp_StackView_1)
             
             target.addressLabel.textColor = UIColor.black
             target.addressLabel.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
-            temp_Container_1.addSubview(target.addressLabel)
+            temp_StackView_1.addArrangedSubview(target.addressLabel)
             
             target.subaddressLabel.textColor = UIColor.black
             target.subaddressLabel.font = UIFont.systemFont(ofSize: 14.0, weight: UIFont.Weight.medium)
-            temp_Container_1.addSubview(target.subaddressLabel)
+            temp_StackView_1.addArrangedSubview(target.subaddressLabel)
             
             target.priceLabel.textColor = UIColor.green
             target.addSubview(target.priceLabel)
             
-            temp_Container_1.snp.makeConstraints {
+            temp_StackView_1.snp.makeConstraints {
                 make in
                 make.centerY.equalTo(target)
             }
