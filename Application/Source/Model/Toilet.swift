@@ -19,14 +19,16 @@ struct Toilet: Deserializable, Serializable {
     let openTimes: [OpenTimes]
     let price: String
     let toiletId: Int
+    let imageCount: Int
     
-    init(title: String, subtitle: String, coordinate: CLLocationCoordinate2D, openTimes: [OpenTimes], price: String, toiletId: Int) {
+    init(title: String, subtitle: String, coordinate: CLLocationCoordinate2D, openTimes: [OpenTimes], price: String, toiletId: Int, imageCount: Int) {
         self.title = title
         self.subtitle = subtitle
         self.coordinate = coordinate
         self.openTimes = openTimes
         self.price = price
         self.toiletId = toiletId
+        self.imageCount = imageCount
     }
     
     init(_ data: DeserializableData) throws {
@@ -38,6 +40,7 @@ struct Toilet: Deserializable, Serializable {
         let coordinates: [Double] = try data["coordinates"].get()
         coordinate = CLLocationCoordinate2D(latitude: coordinates[1], longitude: coordinates[0])
         toiletId = try data["toilet_id"].get()
+        imageCount = data["image_count"].get(or: 0)
     }
     
     func serialize(to data: inout SerializableData) {
@@ -46,6 +49,7 @@ struct Toilet: Deserializable, Serializable {
         data["open_times"].set(openTimes)
         data["price"].set(price)
         data["toilet_id"].set(toiletId)
+        data["image_count"].set(imageCount)
     }
     
 }

@@ -55,11 +55,16 @@ class DetailController: ControllerBase<(toilets: [Toilet], selectedIndex: Int), 
     }
     
     override func update() {
-        dependencies.toiletService.getToiletsImageCount(with: componentState.selectedIndex).subscribe(onNext: { [weak self] result in
-            //TODO: Handle errors
-            guard let imageCount = result.value else {return}
-            self?.setToiletImage(imageCount)
-        }).disposed(by: lifetimeDisposeBag)
+        guard componentState.selectedIndex < componentState.toilets.endIndex else {return}
+        let toilet = componentState.toilets[componentState.selectedIndex]
+        guard toilet.imageCount != 0 else {return}
+        setToiletImage(toilet.imageCount)
+        
+//        dependencies.toiletService.getToiletsImageCount(with: componentState.selectedIndex).subscribe(onNext: { [weak self] result in
+//            //TODO: Handle errors
+//            guard let imageCount = result.value else {return}
+//            self?.setToiletImage(imageCount)
+//        }).disposed(by: lifetimeDisposeBag)
     }
     
     override func act(on action: DetailRootView.ActionType) {

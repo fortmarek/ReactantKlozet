@@ -36,7 +36,7 @@ final class DetailRootView: ViewBase<(toilet: Toilet, image: UIImage?), DetailAc
     }
     
     override func afterInit() {
-        componentState = (toilet: Toilet(title: "", subtitle: "", coordinate: CLLocationCoordinate2D(), openTimes: [], price: "", toiletId: 0), image: nil)
+        componentState = (toilet: Toilet(title: "", subtitle: "", coordinate: CLLocationCoordinate2D(), openTimes: [], price: "", toiletId: 0, imageCount: 0), image: nil)
     }
     
     override func update() {

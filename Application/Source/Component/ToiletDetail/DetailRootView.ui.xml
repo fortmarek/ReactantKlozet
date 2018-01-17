@@ -10,6 +10,8 @@
 
     <ImageView
       field="toiletImageView"
+      contentMode="scaleAspectFill"
+      clipsToBounds="true"
       layout:height="169"
       layout:left="super"
       layout:right="super"
